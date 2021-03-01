@@ -46,7 +46,7 @@ public class TaksControllerTest {
 		try {
 			controller.save(todo);
 		} catch (ValidationException e) {
-			Assert.assert("Fill the due date", e.getMessage());
+			Assert.assertEquals("Fill the due date", e.getMessage());
 		}
 	}
 	
